@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Logo</a>
+		<div class="group">
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Destination</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="action">
+				<li><a href="#">..</a></li>
+				<li><a href="#">..</a></li>
+				<div class="menuToggle">
+					<span>op</span>
+					<span>cls</span>
+				</div>
+			</ul>
+		</div>
+	</header>
+	<!-- Banner -->
+	<div class="banner">
+		<div class="bg">
+			<img src="cover.jpg" class="cover">
+			<div class="content">
+				<h2>Explore The World</h2>
+				<a href="#">Share Now</a>
+			</div>
+			<div class="searchBox">
+				<div class="inputBx">
+					<label for="bx1">Enter Location</label>
+					<input type="text" name="" placeholder="Maldives/Espain..." id="bx1">
+				</div>
+				<div class="inputBx">
+					<label for="bx2">Check In</label>
+					<input type="date" id="bx2">
+				</div>
+				<div class="inputBx">
+					<label for="bx3">Check Out</label>
+					<input type="date" id="bx3">
+				</div>
+				<div class="inputBx">
+					<label for="bx2s">-</label>
+					<input type="submit" value="Find">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	let menuToggle = document.querySelector(".menuToggle");
+	let navigation = document.querySelector('.navigation');
+	menuToggle.onclick = function(){
+		menuToggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
